@@ -8,49 +8,28 @@ $(function() {
 </script>
 
 
-<% content_for(:title) { "1080p dashboard" } %>
-
+<% content_for(:title) { "My super sweet dashboard" } %>
 <div class="gridster">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-view="Clock"></div>
-      <i class="icon-time icon-background"></i>
-    </li>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-view="Countdown" data-title="BPT 13.1" data-end="09-May-2013 18:00:00"></div>
+      </li>
+  	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+  	      <div data-id="twitter_user_followers" data-view="Number" data-title="Twitter Piraten Rostock" style="background-color: #1d9fe3"></div>
+  	    </li>
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+	      <div data-id="fblinkstat" data-view="List" data-unordered="true" data-title="FB Status" data-moreinfo="for piratenrostock"></div>
+	    <i class="icon-facebook icon-background"></i>
+	    </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-view="Image" data-image="/logo.png"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new 1080p dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="synergy" data-view="Meter" data-title="Synergy" data-min="0" data-max="100"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="synergy" data-view="Meter" data-moreinfo="In sync with my neighbour!" data-title="Synergy" data-min="0" data-max="100"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
-      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="karma" data-view="Number" data-title="Karma" style="background-color:#96bf48;"></div>
-      <i class="icon-heart icon-background"></i>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
-      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#47bbb3;" data-moreinfo="poop" ></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="twitter_mentions" data-view="Comments" style="background-color:#ff9618;" data-moreinfo="Tweets tagged with #todayilearned"></div>
-      <i class="icon-twitter icon-background"></i>
-    </li>
-
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+	      <div data-id="slideshare_user_slides_count" data-view="Number" data-title="Piraten MV Slides" style="background-color: #2c2a26"></div>
+	    </li>
+		<li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+		  <div data-id="seattle-times" data-view="News" data-title="Piraten MV" data-interval="30"></div>
+		</li>
+		<li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+		  <div data-id="ml-rostock" data-view="News" data-title="ML Piraten Rostock" data-interval="30"></div>
+		</li>
   </ul>
-  <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
 </div>
