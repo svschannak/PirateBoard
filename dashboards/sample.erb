@@ -1,0 +1,25 @@
+<% content_for(:title) { "My super sweet dashboard" } %>
+<div class="gridster">
+  <ul>
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-view="Countdown" data-title="BPT 13.1" data-end="09-May-2013 18:00:00"></div>
+      </li>
+  	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+  	      <div data-id="twitter_user_followers" data-view="Number" data-title="Twitter Piraten Rostock" style="background-color: #1d9fe3"></div>
+  	    </li>
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+	      <div data-id="fblinkstat" data-view="List" data-unordered="true" data-title="FB Status" data-moreinfo="for piratenrostock"></div>
+	    <i class="icon-facebook icon-background"></i>
+	    </li>
+
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+	      <div data-id="slideshare_user_slides_count" data-view="Number" data-title="Piraten MV Slides" style="background-color: #2c2a26"></div>
+	    </li>
+		<li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+		  <div data-id="seattle-times" data-view="News" data-title="Piraten MV" data-interval="30"></div>
+		</li>
+		<li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+		  <div data-id="ml-rostock" data-view="News" data-title="ML Piraten Rostock" data-interval="30"></div>
+		</li>
+  </ul>
+</div>
